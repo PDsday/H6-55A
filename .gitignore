@@ -1,0 +1,42 @@
+# ===================================================================
+# 星辰 APP（H6-55A）-- Git 忽略规则
+#
+# 保留入库：
+#   源码（.c/.h/.s）、Keil 工程定义（H6.uvproj）、对象字典（.eds/.od）、
+#   分散加载（.sct）、联调配置（JLinkSettings.ini）、发布固件（30.Project/Bin/*.bin）
+# 忽略：
+#   编译产物、调试日志、Keil 用户级配置与各类备份
+# ===================================================================
+
+# --- Keil 编译输出目录（.o/.lst/.crf/.i/.d/.axf/.map/.hex/.htm 等全部产物）---
+30.Project/ObjFile/
+
+# --- 编译产物兜底（ObjFile 之外的漏网文件）---
+*.o
+*.lst
+*.crf
+*.i
+*.d
+*.axf
+*.map
+*.hex
+*.htm
+*.dep
+*.tra
+*.lnp
+*.plg
+*.iex
+*.__i
+*._ip
+
+# --- 调试日志（J-Link 日志，单文件可达数 MB）---
+JLinkLog.txt
+
+# --- Keil 用户级配置（窗口布局/断点，随机器与用户不同）---
+*.uvgui.*
+*.uvguix.*
+*.uvopt
+*.uvoptx
+
+# --- 备份文件（含 *_uvopt.bak / *_uvproj.bak / *.uvgui_*.bak）---
+*.bak

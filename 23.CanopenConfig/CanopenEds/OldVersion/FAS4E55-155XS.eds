@@ -1,0 +1,9391 @@
+[FileInfo]
+CreatedBy=SSB Wind Systems GmbH & Co. KG
+ModifiedBy=SSB Wind Systems GmbH & Co. KG
+Description=EDS for MPCxxxAC with SW-Version from 0301
+CreationTime=11:45AM
+CreationDate=06-03-2021
+ModificationTime=11:45AM
+ModificationDate=06-03-2021
+FileName=FAS4E55-155XS.eds
+FileVersion=1
+FileRevision=1
+EDSVersion=4.0
+
+[DeviceInfo]
+VendorName=SSB Wind Systems GmbH & Co. KG
+VendorNumber=0x000001AA
+ProductName=MPCxxxAC
+ProductNumber=0
+RevisionNumber=0
+OrderCode=0
+BaudRate_10=1
+BaudRate_20=1
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=0
+BaudRate_1000=1
+SimpleBootUpMaster=0
+SimpleBootUpSlave=1
+Granularity=16
+DynamicChannelsSupported=0
+CompactPDO=0
+GroupMessaging=0
+NrOfRXPDO=4
+NrOfTXPDO=4
+LSS_Supported=0
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=1
+Dummy0004=1
+Dummy0005=0
+Dummy0006=1
+Dummy0007=1
+
+[Comments]
+Lines=1
+Line1=MPCxxxAC mit POSI01-Modul.
+
+[MandatoryObjects]
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+[1000]
+ParameterName=Device Type
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x20192
+PDOMapping=0
+
+[1001]
+ParameterName=Error Register
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+PDOMapping=0
+
+[1018]
+ParameterName=Identity Object
+ObjectType=0x9
+SubNumber=5
+
+[1018sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=4
+PDOMapping=0
+LowLimit=1
+HighLimit=4
+
+[1018sub1]
+ParameterName=Vendor Id
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0x000001AA
+PDOMapping=0
+
+[1018sub2]
+ParameterName=Product Code
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+
+[1018sub3]
+ParameterName=Revision number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+
+[1018sub4]
+ParameterName=Serial number
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[OptionalObjects]
+SupportedObjects=67
+1=0x1005
+2=0x1006
+3=0x1008
+4=0x1009
+5=0x100A
+6=0x100C
+7=0x100D
+8=0x1010
+9=0x1011
+10=0x1014
+11=0x1016
+12=0x1017
+13=0x1200
+14=0x1400
+15=0x1401
+16=0x1402
+17=0x1403
+18=0x1600
+19=0x1601
+20=0x1602
+21=0x1603
+22=0x1800
+23=0x1801
+24=0x1802
+25=0x1803
+26=0x1A00
+27=0x1A01
+28=0x1A02
+29=0x1A03
+30=0x6040
+31=0x6041
+32=0x6060
+33=0x6061
+34=0x6064
+35=0x6069
+36=0x606B
+37=0x606C
+38=0x607A
+39=0x60FF
+40=0x6100
+41=0x6101
+42=0x6102
+43=0x6103
+44=0x6104
+45=0x6105
+46=0x6106
+47=0x6107
+48=0x6108
+49=0x6109
+50=0x610A
+51=0x610B
+52=0x610C
+53=0x610D
+54=0x610E
+55=0x610F
+56=0x6110
+57=0x6111
+58=0x6112
+59=0x6113
+60=0x6114
+61=0x6115
+62=0x6116
+63=0x6117
+64=0x6118
+65=0x6119
+66=0x611A
+67=0x611B
+
+[1005]
+ParameterName=COB-ID SYNC
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00000080
+PDOMapping=0
+LowLimit=0x00000001
+HighLimit=0x3FFFFFFF
+
+[1006]
+ParameterName=Communication Cycle Period
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+
+[1008]
+ParameterName=Manufacturer Device Name
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+DefaultValue=MPCxxxAC
+PDOMapping=0
+
+[1009]
+ParameterName=Manufacturer Hardware Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[100A]
+ParameterName=Manufacturer Software Version
+ObjectType=0x7
+DataType=0x0009
+AccessType=const
+PDOMapping=0
+
+[100C]
+ParameterName=Guard Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[100D]
+ParameterName=Life Time Factor
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x00
+PDOMapping=0
+
+[1010]
+ParameterName=Store Parameters
+ObjectType=0x8
+SubNumber=5
+
+[1010sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=4
+PDOMapping=0
+
+[1010sub1]
+ParameterName=Save All Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1010sub2]
+ParameterName=Save Communication Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1010sub3]
+ParameterName=Save Application Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1010sub4]
+ParameterName=Save Manufacturer Defined Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1011]
+ParameterName=Restore Default Parameters
+ObjectType=0x8
+SubNumber=4
+
+[1011sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=3
+PDOMapping=0
+
+[1011sub1]
+ParameterName=Restore All Default Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+
+[1011sub2]
+ParameterName=Restore Communication Default Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+
+[1011sub3]
+ParameterName=Restore Application Default Parameters
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+
+[1014]
+ParameterName=COB-ID EMCY
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x80
+PDOMapping=0
+
+[1016]
+ParameterName=Consumer Heartbeat Time
+ObjectType=0x8
+SubNumber=2
+
+[1016sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=1
+PDOMapping=0
+
+[1016sub1]
+ParameterName=Consumer Heartbeat Time
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00000000
+PDOMapping=0
+LowLimit=0x00000000
+HighLimit=0x007FFFFF
+
+[1017]
+ParameterName=Producer Heartbeat Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0x0000
+HighLimit=0xFFFA
+
+[1200]
+ParameterName=Server SDO Parameter
+ObjectType=0x9
+SubNumber=3
+
+[1200sub0]
+ParameterName=Number of entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+LowLimit=0x02
+HighLimit=0x02
+
+[1200sub1]
+ParameterName=COB-ID Client -> Server (rx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x600
+PDOMapping=0
+
+[1200sub2]
+ParameterName=COB-ID Server -> Client (tx)
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+DefaultValue=$NODEID+0x580
+PDOMapping=0
+
+[1400]
+ParameterName=Rx PDO 1 Communication Parameter
+ObjectType=0x9
+SubNumber=3
+
+[1400sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+
+[1400sub1]
+ParameterName=COB-ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x200
+PDOMapping=0
+
+[1400sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+
+[1401]
+ParameterName=Rx PDO 2 Communication Parameter
+ObjectType=0x9
+SubNumber=3
+
+[1401sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+
+[1401sub1]
+ParameterName=COB-ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x300
+PDOMapping=0
+
+[1401sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+
+[1402]
+ParameterName=Rx PDO 3 Communication Parameter
+ObjectType=0x9
+SubNumber=3
+
+[1402sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+
+[1402sub1]
+ParameterName=COB-ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x400
+PDOMapping=0
+
+[1402sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+
+[1403]
+ParameterName=Rx PDO 4 Communication Parameter
+ObjectType=0x9
+SubNumber=3
+
+[1403sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=2
+PDOMapping=0
+
+[1403sub1]
+ParameterName=COB-ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x500
+PDOMapping=0
+
+[1403sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+
+[1600]
+ParameterName=Rx PDO 1 Mapping Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1600sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[1600sub1]
+ParameterName=Mapping for object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x60400010
+PDOMapping=0
+
+[1600sub2]
+ParameterName=Mapping for object 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x607a0010
+PDOMapping=0
+
+[1600sub3]
+ParameterName=Mapping for object 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61020008
+PDOMapping=0
+
+[1600sub4]
+ParameterName=Mapping for object 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61030010
+PDOMapping=0
+
+[1601]
+ParameterName=Rx PDO 2 Mapping Parameter
+ObjectType=0x9
+SubNumber=4
+
+[1601sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=3
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[1601sub1]
+ParameterName=Mapping for object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61040010
+PDOMapping=0
+
+[1601sub2]
+ParameterName=Mapping for object 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61050010
+PDOMapping=0
+
+[1601sub3]
+ParameterName=Mapping for object 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61060008
+PDOMapping=0
+
+[1602]
+ParameterName=Rx PDO 3 Mapping Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1602sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[1602sub1]
+ParameterName=Mapping for object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1602sub2]
+ParameterName=Mapping for object 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1602sub3]
+ParameterName=Mapping for object 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1602sub4]
+ParameterName=Mapping for object 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1603]
+ParameterName=Rx PDO 4 Mapping Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1603sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[1603sub1]
+ParameterName=Mapping for object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1603sub2]
+ParameterName=Mapping for object 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1603sub3]
+ParameterName=Mapping for object 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1603sub4]
+ParameterName=Mapping for object 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[1800]
+ParameterName=Tx PDO 1 Communication Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1800sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+
+[1800sub1]
+ParameterName=COB-ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x00000180
+PDOMapping=0
+
+[1800sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1800sub3]
+ParameterName=inhibit time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1800sub5]
+ParameterName=event timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1801]
+ParameterName=Tx PDO 2 Communication Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1801sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+
+[1801sub1]
+ParameterName=COB-ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x00000280
+PDOMapping=0
+
+[1801sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1801sub3]
+ParameterName=inhibit time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1801sub5]
+ParameterName=event timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1802]
+ParameterName=Tx PDO 3 Communication Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1802sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+
+[1802sub1]
+ParameterName=COB-ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x00000380
+PDOMapping=0
+
+[1802sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1802sub3]
+ParameterName=inhibit time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1802sub5]
+ParameterName=event timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1803]
+ParameterName=Tx PDO 4 Communication Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1803sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=5
+PDOMapping=0
+
+[1803sub1]
+ParameterName=COB-ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=$NODEID+0x00000480
+PDOMapping=0
+
+[1803sub2]
+ParameterName=transmission type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0x01
+PDOMapping=0
+
+[1803sub3]
+ParameterName=inhibit time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1803sub5]
+ParameterName=event timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0
+PDOMapping=0
+
+[1A00]
+ParameterName=Tx PDO 1 Mapping Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1A00sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[1A00sub1]
+ParameterName=Mapping for object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x610a0010
+PDOMapping=0
+
+[1A00sub2]
+ParameterName=Mapping for object 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x610b0010
+PDOMapping=0
+
+[1A00sub3]
+ParameterName=Mapping for object 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x610c0010
+PDOMapping=0
+
+[1A00sub4]
+ParameterName=Mapping for object 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x610d0010
+PDOMapping=0
+
+[1A01]
+ParameterName=Tx PDO 2 Mapping Parameter
+ObjectType=0x9
+SubNumber=6
+
+[1A01sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[1A01sub1]
+ParameterName=Mapping for object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x610e0010
+PDOMapping=0
+
+[1A01sub2]
+ParameterName=Mapping for object 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x610f0010
+PDOMapping=0
+
+[1A01sub3]
+ParameterName=Mapping for object 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61100010
+PDOMapping=0
+
+[1A01sub4]
+ParameterName=Mapping for object 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61110008
+PDOMapping=0
+
+[1A01sub5]
+ParameterName=Mapping for object 5
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61120008
+PDOMapping=0
+
+[1A02]
+ParameterName=Tx PDO 3 Mapping Parameter
+ObjectType=0x9
+SubNumber=6
+
+[1A02sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+
+[1A02sub1]
+ParameterName=Mapping for object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61130008
+PDOMapping=0
+
+[1A02sub2]
+ParameterName=Mapping for object 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61140008
+PDOMapping=0
+
+[1A02sub3]
+ParameterName=Mapping for object 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61150008
+PDOMapping=0
+
+[1A02sub4]
+ParameterName=Mapping for object 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61160008
+PDOMapping=0
+
+[1A02sub5]
+ParameterName=Mapping for object 5
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61170008
+PDOMapping=0
+
+[1A03]
+ParameterName=Tx PDO 4 Mapping Parameter
+ObjectType=0x9
+SubNumber=5
+
+[1A03sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[1A03sub1]
+ParameterName=Mapping for object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61180010
+PDOMapping=0
+
+[1A03sub2]
+ParameterName=Mapping for object 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x61190010
+PDOMapping=0
+
+[1A03sub3]
+ParameterName=Mapping for object 3
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x611a0010
+PDOMapping=0
+
+[1A03sub4]
+ParameterName=Mapping for object 4
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x611b0010
+PDOMapping=0
+
+[6040]
+ParameterName=Controlword
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+
+[6041]
+ParameterName=Statusword
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[6060]
+ParameterName=Modes of operation
+ObjectType=0x7
+DataType=0x0003
+AccessType=rww
+DefaultValue=3
+PDOMapping=1
+
+[6061]
+ParameterName=Modes of operation display
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[6064]
+ParameterName=Position actual value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[6069]
+ParameterName=Velocity sensor actual value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[606B]
+ParameterName=Velocity demand value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[606C]
+ParameterName=Velocity actual value
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[607A]
+ParameterName=Target position
+ObjectType=0x7
+DataType=0x0003
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=-27647
+HighLimit=27647
+
+[60FF]
+ParameterName=Target velocity
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=-4000
+HighLimit=4000
+
+[6100]
+ParameterName=Reserve_6100
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+
+[6101]
+ParameterName=Reserve_6101
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+
+[6102]
+ParameterName=Target Speed
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=50
+
+[6103]
+ParameterName=ActPosition1
+ObjectType=0x7
+DataType=0x0003
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=-32737
+HighLimit=32767
+
+[6104]
+ParameterName=ActPosition2
+ObjectType=0x7
+DataType=0x0003
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=-32737
+HighLimit=32767
+
+[6105]
+ParameterName=Generator Speed
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=30000
+
+[6106]
+ParameterName=Spindle Speed
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=250
+
+[6107]
+ParameterName=Reserve_6107
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=250
+
+[6108]
+ParameterName=Reserve_6108
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=250
+
+[6109]
+ParameterName=Reserve_6109
+ObjectType=0x7
+DataType=0x0005
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=250
+
+[610A]
+ParameterName=Axis Status Word1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=65536
+
+[610B]
+ParameterName=Axis Status Word2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=65536
+
+[610C]
+ParameterName=Axis1/2/3 Drive Fault1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=65536
+
+[610D]
+ParameterName=Axis1/2/3 Drive Fault2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=65536
+
+[610E]
+ParameterName=Axis1/2/3 Drive DiStatusword1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=65536
+
+[610F]
+ParameterName=Axis1/2/3 Drive DiStatusword2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=65536
+
+[6110]
+ParameterName=Axis Pitch Actual Position
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=-32767
+HighLimit=32767
+
+[6111]
+ParameterName=Axis Pitch Speed
+ObjectType=0x7
+DataType=0x0002
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=-127
+HighLimit=127
+
+[6112]
+ParameterName=Axis Sever Output Current
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=255
+
+[6113]
+ParameterName=Axis Sever Temperature
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=255
+
+[6114]
+ParameterName=Axis Motor Temperature
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=255
+
+[6115]
+ParameterName=Axis Cabinet Temperature
+ObjectType=0x7
+DataType=0x0002
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=-128
+HighLimit=127
+
+[6116]
+ParameterName=Cap Cabinet Temperature
+ObjectType=0x7
+DataType=0x0002
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=-128
+HighLimit=127
+
+[6117]
+ParameterName=Hub Temperature
+ObjectType=0x7
+DataType=0x0002
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=-128
+HighLimit=127
+
+[6118]
+ParameterName=Backup Voltage
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=550
+
+[6119]
+ParameterName=Sever Dclink Voltage
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=550
+
+[611A]
+ParameterName=Pitch Fault Word1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=65536
+
+[611B]
+ParameterName=Pitch Fault Word2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=65536
+
+[ManufacturerObjects]
+SupportedObjects=11
+1=0x2001
+2=0x2002
+3=0x2003
+4=0x2004
+5=0x2005
+6=0x2006
+7=0x2007
+8=0x2008
+9=0x2009
+10=0x2010
+11=0x2011
+
+[2001]
+ParameterName=Menu 01 Analogeingaenge
+ObjectType=0x9
+SubNumber=101
+
+[2001sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=100
+PDOMapping=0
+
+[2001sub1]
+ParameterName=#01.01 Analogeingang Drehzahlsollwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub2]
+ParameterName=#01.02 Offset nsoll
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-2000
+HighLimit=2000
+
+[2001sub3]
+ParameterName=#01.03 Skalierung nsoll
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2001sub4]
+ParameterName=#01.04 Analog Drehzahlsollwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub5]
+ParameterName=Menu 01 Analogeingaenge05
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub6]
+ParameterName=Menu 01 Analogeingaenge06
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub7]
+ParameterName=Menu 01 Analogeingaenge07
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub8]
+ParameterName=Menu 01 Analogeingaenge08
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub9]
+ParameterName=Menu 01 Analogeingaenge09
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001subA]
+ParameterName=Menu 01 Analogeingaenge0A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001subB]
+ParameterName=Menu 01 Analogeingaenge0B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001subC]
+ParameterName=Menu 01 Analogeingaenge0C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001subD]
+ParameterName=Menu 01 Analogeingaenge0D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001subE]
+ParameterName=Menu 01 Analogeingaenge0E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001subF]
+ParameterName=Menu 01 Analogeingaenge0F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub10]
+ParameterName=Menu 01 Analogeingaenge10
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub11]
+ParameterName=#01.11 Istwert Motortemperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub12]
+ParameterName=#01.12 Offset Motortemperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-20
+HighLimit=40
+
+[2001sub13]
+ParameterName=#01.13 Skalierung Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2001sub14]
+ParameterName=#01.14 Motortemperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub15]
+ParameterName=Menu 01 Analogeingaenge15
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub16]
+ParameterName=Menu 01 Analogeingaenge16
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub17]
+ParameterName=Menu 01 Analogeingaenge17
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub18]
+ParameterName=Menu 01 Analogeingaenge18
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub19]
+ParameterName=Menu 01 Analogeingaenge19
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub1A]
+ParameterName=Menu 01 Analogeingaenge1A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub1B]
+ParameterName=Menu 01 Analogeingaenge1B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub1C]
+ParameterName=Menu 01 Analogeingaenge1C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub1D]
+ParameterName=Menu 01 Analogeingaenge1D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub1E]
+ParameterName=Menu 01 Analogeingaenge1E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub1F]
+ParameterName=Menu 01 Analogeingaenge1F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub20]
+ParameterName=Menu 01 Analogeingaenge20
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub21]
+ParameterName=#01.21 Istwert Kuehlkoerpertemperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub22]
+ParameterName=#01.22 Offset Kuehlkoerpertemperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-20
+HighLimit=40
+
+[2001sub23]
+ParameterName=#01.23 Skalierung Kuehlkoerperatemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2001sub24]
+ParameterName=#01.24 Kuehlkoerpertemperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub25]
+ParameterName=Menu 01 Analogeingaenge25
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub26]
+ParameterName=Menu 01 Analogeingaenge26
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub27]
+ParameterName=Menu 01 Analogeingaenge27
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub28]
+ParameterName=Menu 01 Analogeingaenge28
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub29]
+ParameterName=Menu 01 Analogeingaenge29
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub2A]
+ParameterName=Menu 01 Analogeingaenge2A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub2B]
+ParameterName=Menu 01 Analogeingaenge2B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub2C]
+ParameterName=Menu 01 Analogeingaenge2C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub2D]
+ParameterName=Menu 01 Analogeingaenge2D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub2E]
+ParameterName=Menu 01 Analogeingaenge2E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub2F]
+ParameterName=Menu 01 Analogeingaenge2F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub30]
+ParameterName=Menu 01 Analogeingaenge30
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub31]
+ParameterName=#01.31 Zwischenkreisspannung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2001sub32]
+ParameterName=Menu 01 Analogeingaenge32
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub33]
+ParameterName=Menu 01 Analogeingaenge33
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub34]
+ParameterName=Menu 01 Analogeingaenge34
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub35]
+ParameterName=Menu 01 Analogeingaenge35
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub36]
+ParameterName=Menu 01 Analogeingaenge36
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub37]
+ParameterName=Menu 01 Analogeingaenge37
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub38]
+ParameterName=Menu 01 Analogeingaenge38
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub39]
+ParameterName=Menu 01 Analogeingaenge39
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub3A]
+ParameterName=Menu 01 Analogeingaenge3A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub3B]
+ParameterName=Menu 01 Analogeingaenge3B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub3C]
+ParameterName=Menu 01 Analogeingaenge3C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub3D]
+ParameterName=Menu 01 Analogeingaenge3D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub3E]
+ParameterName=Menu 01 Analogeingaenge3E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub3F]
+ParameterName=Menu 01 Analogeingaenge3F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub40]
+ParameterName=Menu 01 Analogeingaenge40
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub41]
+ParameterName=#01.41 22V Analog
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2001sub42]
+ParameterName=Menu 01 Analogeingaenge42
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub43]
+ParameterName=Menu 01 Analogeingaenge43
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub44]
+ParameterName=Menu 01 Analogeingaenge44
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub45]
+ParameterName=Menu 01 Analogeingaenge45
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub46]
+ParameterName=Menu 01 Analogeingaenge46
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub47]
+ParameterName=Menu 01 Analogeingaenge47
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub48]
+ParameterName=Menu 01 Analogeingaenge48
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub49]
+ParameterName=Menu 01 Analogeingaenge49
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub4A]
+ParameterName=Menu 01 Analogeingaenge4A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub4B]
+ParameterName=Menu 01 Analogeingaenge4B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub4C]
+ParameterName=Menu 01 Analogeingaenge4C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub4D]
+ParameterName=Menu 01 Analogeingaenge4D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub4E]
+ParameterName=Menu 01 Analogeingaenge4E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub4F]
+ParameterName=Menu 01 Analogeingaenge4F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub50]
+ParameterName=Menu 01 Analogeingaenge50
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub51]
+ParameterName=#01.51 IistU
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub52]
+ParameterName=#01.52 Offset IistU
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-200
+HighLimit=200
+
+[2001sub53]
+ParameterName=#01.53 Skalierung IistU
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2001sub54]
+ParameterName=#01.54 Motorstrom U
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub55]
+ParameterName=Menu 01 Analogeingaenge55
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub56]
+ParameterName=Menu 01 Analogeingaenge56
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub57]
+ParameterName=Menu 01 Analogeingaenge57
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub58]
+ParameterName=Menu 01 Analogeingaenge58
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub59]
+ParameterName=Menu 01 Analogeingaenge59
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub5A]
+ParameterName=Menu 01 Analogeingaenge5A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub5B]
+ParameterName=Menu 01 Analogeingaenge5B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub5C]
+ParameterName=Menu 01 Analogeingaenge5C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub5D]
+ParameterName=Menu 01 Analogeingaenge5D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub5E]
+ParameterName=Menu 01 Analogeingaenge5E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub5F]
+ParameterName=Menu 01 Analogeingaenge5F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub60]
+ParameterName=Menu 01 Analogeingaenge60
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2001sub61]
+ParameterName=#01.61 IistV
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2001sub62]
+ParameterName=#01.62 Offset IistV
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-200
+HighLimit=200
+
+[2001sub63]
+ParameterName=#01.63 Skalierung IistV
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2001sub64]
+ParameterName=#01.64 Motorstrom V
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2002]
+ParameterName=Menu 02 Digital EinAusgaenge
+ObjectType=0x9
+SubNumber=68
+
+[2002sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=67
+PDOMapping=0
+
+[2002sub1]
+ParameterName=#02.01 Eingang RFG
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub2]
+ParameterName=#02.02 Eingang RST
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub3]
+ParameterName=#02.03 Eingang END
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub4]
+ParameterName=#02.04 Eingang OpenLoop
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub5]
+ParameterName=#02.05 Eingang RI1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub6]
+ParameterName=#02.06 RI1 Invertierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub7]
+ParameterName=#02.07 RI1 Zielparameter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0325
+PDOMapping=0
+LowLimit=0000
+HighLimit=9999
+
+[2002sub8]
+ParameterName=#02.08 Eingang RI2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub9]
+ParameterName=#02.09 RI2 Invertierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002subA]
+ParameterName=Menu 02 Digital0A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002subB]
+ParameterName=Menu 02 Digital0B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002subC]
+ParameterName=Menu 02 Digital0C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002subD]
+ParameterName=Menu 02 Digital0D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002subE]
+ParameterName=Menu 02 Digital0E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002subF]
+ParameterName=Menu 02 Digital0F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub10]
+ParameterName=#02.10 RI2 Zielparameter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0324
+PDOMapping=0
+LowLimit=0000
+HighLimit=9999
+
+[2002sub11]
+ParameterName=#02.11 Eingang RI3
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub12]
+ParameterName=#02.12 RI3 Invertierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub13]
+ParameterName=#02.13 RI3 Zielparameter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0000
+PDOMapping=0
+LowLimit=0000
+HighLimit=9999
+
+[2002sub14]
+ParameterName=#02.14 RO1 Quellparameter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0516
+PDOMapping=0
+LowLimit=0000
+HighLimit=9999
+
+[2002sub15]
+ParameterName=#02.15 RO1 Invertierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub16]
+ParameterName=#02.16 Ausgang RO1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub17]
+ParameterName=#02.17 RO2 Quellparameter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0907
+PDOMapping=0
+LowLimit=0000
+HighLimit=9999
+
+[2002sub18]
+ParameterName=#02.18 RO2 Invertierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub19]
+ParameterName=#02.19 Ausgang RO2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub1A]
+ParameterName=Menu 02 Digital1A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub1B]
+ParameterName=Menu 02 Digital1B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub1C]
+ParameterName=Menu 02 Digital1C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub1D]
+ParameterName=Menu 02 Digital1D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub1E]
+ParameterName=Menu 02 Digital1E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub1F]
+ParameterName=Menu 02 Digital1F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub20]
+ParameterName=#02.20 RO3 Quellparameter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0223
+PDOMapping=0
+LowLimit=0000
+HighLimit=9999
+
+[2002sub21]
+ParameterName=#02.21 RO3 Invertierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub22]
+ParameterName=#02.22 Ausgang RO3
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub23]
+ParameterName=#02.23 Eingang Netzausfall
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub24]
+ParameterName=#02.24 Netzausfall nach Zeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub25]
+ParameterName=#02.25 Auswahl PH Netzausfall
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub26]
+ParameterName=#02.26 Ausgang PH Netzausfall
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub27]
+ParameterName=#02.27 Ueberlastung Ausgangstransistor
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub28]
+ParameterName=#02.28 Ausgang Bypass
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub29]
+ParameterName=#02.29 Ausgang LKK
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub2A]
+ParameterName=Menu 02 Digital2A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub2B]
+ParameterName=Menu 02 Digital2B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub2C]
+ParameterName=Menu 02 Digital2C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub2D]
+ParameterName=Menu 02 Digital2D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub2E]
+ParameterName=Menu 02 Digital2E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub2F]
+ParameterName=Menu 02 Digital2F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub30]
+ParameterName=#02.30 Ausgang BTB Meldekontakt
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub31]
+ParameterName=#02.31 Relaisausgang BTB Invertierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub32]
+ParameterName=#02.32 Fehler gesteuerter Gleichrichter
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub33]
+ParameterName=#02.33 OL Bus
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2002sub34]
+ParameterName=#02.34 Quelle OL
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub35]
+ParameterName=#02.35 OpenLoop Betrieb
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub36]
+ParameterName=#02.36 Control 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2002sub37]
+ParameterName=#02.37 Control 2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2002sub38]
+ParameterName=#02.38 Control 3
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2002sub39]
+ParameterName=#02.39 Inverter END
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub3A]
+ParameterName=Menu 02 Digital3A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub3B]
+ParameterName=Menu 02 Digital3B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub3C]
+ParameterName=Menu 02 Digital3C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub3D]
+ParameterName=Menu 02 Digital3D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub3E]
+ParameterName=Menu 02 Digital3E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub3F]
+ParameterName=Menu 02 Digital3F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2002sub40]
+ParameterName=#02.40 Fehler Optionsmodul 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub41]
+ParameterName=#02.41 Fehler Optionsmodul 2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub42]
+ParameterName=#02.42 EFC aktiviert
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2002sub43]
+ParameterName=#02.43 Status IOs
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2003]
+ParameterName=Menu 03 Sollwertauswahl Begrenzung und Ausblendung
+ObjectType=0x9
+SubNumber=150
+
+[2003sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=149
+PDOMapping=0
+
+[2003sub1]
+ParameterName=#03.01 Analog Drehzahlsollwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2003sub2]
+ParameterName=#03.02 Festsollwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub3]
+ParameterName=#03.03 Sollwert Positionierung
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2003sub4]
+ParameterName=#03.04 Sollwertvorgabe ueber Option
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2003sub5]
+ParameterName=#03.05 Auswahl Drehzahlsollwertquelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=3
+
+[2003sub6]
+ParameterName=#03.06 CAN Sollwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2003sub7]
+ParameterName=#03.07 Sollwert Offset
+ObjectType=0x7
+DataType=0x0003
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub8]
+ParameterName=#03.08 Endlage Sollwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2003sub9]
+ParameterName=#03.09 Ausgewaehlter Sollwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2003subA]
+ParameterName=Menu 03 Sollwertauswahl0A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003subB]
+ParameterName=Menu 03 Sollwertauswahl0B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003subC]
+ParameterName=Menu 03 Sollwertauswahl0C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003subD]
+ParameterName=Menu 03 Sollwertauswahl0D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003subE]
+ParameterName=Menu 03 Sollwertauswahl0E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003subF]
+ParameterName=Menu 03 Sollwertauswahl0F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub10]
+ParameterName=#03.10 Maximaler Drehzahlsollwert
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=2500
+PDOMapping=0
+LowLimit=0
+HighLimit=4000
+
+[2003sub11]
+ParameterName=#03.11 Sollwert vor Ausblendung
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2003sub12]
+ParameterName=#03.12 Sollwert nach Ausblendung
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2003sub13]
+ParameterName=#03.13 Ausblenddrehzahl 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=4000
+
+[2003sub14]
+ParameterName=#03.14 Ausblendbereich 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=5
+PDOMapping=0
+LowLimit=0
+HighLimit=50
+
+[2003sub15]
+ParameterName=#03.15 Ausblenddrehzahl 2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=4000
+
+[2003sub16]
+ParameterName=#03.16 Ausblendbereich 2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=5
+PDOMapping=0
+LowLimit=0
+HighLimit=50
+
+[2003sub17]
+ParameterName=#03.17 Sollwert in Ausblendbereich
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2003sub18]
+ParameterName=#03.18 Aktivierung Freigabe ueber Bus
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=2
+
+[2003sub19]
+ParameterName=#03.19 CANBus Aktivierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2003sub1A]
+ParameterName=Menu 03 Sollwertauswahl1A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub1B]
+ParameterName=Menu 03 Sollwertauswahl1B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub1C]
+ParameterName=Menu 03 Sollwertauswahl1C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub1D]
+ParameterName=Menu 03 Sollwertauswahl1D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub1E]
+ParameterName=Menu 03 Sollwertauswahl1E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub1F]
+ParameterName=Menu 03 Sollwertauswahl1F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub20]
+ParameterName=#03.20 Auswahl CAN Sollwert
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2003sub21]
+ParameterName=#03.21 Eingang END
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2003sub22]
+ParameterName=#03.22 Anwahl Endlage
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2003sub23]
+ParameterName=#03.23 Endlage angewaehlt
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2003sub24]
+ParameterName=#03.24 Anwahl Linkslauf
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2003sub25]
+ParameterName=#03.25 Sollwert sperren
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2003sub26]
+ParameterName=#03.26 Aktivierungszeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=20
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub27]
+ParameterName=#03.27 Eingang RFG
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2003sub28]
+ParameterName=#03.28 Filter nsoll
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub29]
+ParameterName=#03.29 Endfahrt Beschleunigungszeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=25
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub2A]
+ParameterName=Menu 03 Sollwertauswahl2A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub2B]
+ParameterName=Menu 03 Sollwertauswahl2B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub2C]
+ParameterName=Menu 03 Sollwertauswahl2C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub2D]
+ParameterName=Menu 03 Sollwertauswahl2D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub2E]
+ParameterName=Menu 03 Sollwertauswahl2E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub2F]
+ParameterName=Menu 03 Sollwertauswahl2F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub30]
+ParameterName=#03.30 Endfahrt Verzoegerungszeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=25
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub31]
+ParameterName=#03.31 Endfahrt Drehzahl n1
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=2500
+PDOMapping=0
+LowLimit=-4000
+HighLimit=4000
+
+[2003sub32]
+ParameterName=#03.32 Endfahrt Zeit t1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=12
+PDOMapping=0
+LowLimit=0
+HighLimit=600
+
+[2003sub33]
+ParameterName=#03.33 Endfahrt Drehzahl n2
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=500
+PDOMapping=0
+LowLimit=-4000
+HighLimit=4000
+
+[2003sub34]
+ParameterName=#03.34 Endfahrt Zeit t2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=15
+PDOMapping=0
+LowLimit=0
+HighLimit=600
+
+[2003sub35]
+ParameterName=#03.35 Endfahrt Drehzahl n3
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=2500
+PDOMapping=0
+LowLimit=-4000
+HighLimit=4000
+
+[2003sub36]
+ParameterName=#03.36 Wahl EFC Steuerung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2003sub37]
+ParameterName=#03.37 Profil aktiviert
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2003sub38]
+ParameterName=#03.38 EFC aktiviert
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2003sub39]
+ParameterName=#03.39 Aktivierungszeit END90
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub3A]
+ParameterName=Menu 03 Sollwertauswahl3A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub3B]
+ParameterName=Menu 03 Sollwertauswahl3B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub3C]
+ParameterName=Menu 03 Sollwertauswahl3C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub3D]
+ParameterName=Menu 03 Sollwertauswahl3D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub3E]
+ParameterName=Menu 03 Sollwertauswahl3E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub3F]
+ParameterName=Menu 03 Sollwertauswahl3F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub40]
+ParameterName=#03.40 Verzoegerungszeit END90
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub41]
+ParameterName=#03.41 Geschwindigkeit v1
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub42]
+ParameterName=#03.42 Beschleunigung +t1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub43]
+ParameterName=#03.43 Verzoegerung -t1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub44]
+ParameterName=#03.44 Stuetzstelle P1
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub45]
+ParameterName=#03.45 Geschwindigkeit v2
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub46]
+ParameterName=#03.46 Beschleunigung +t2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub47]
+ParameterName=#03.47 Verzoegerung -t2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub48]
+ParameterName=#03.48 Stuetzstelle P2
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub49]
+ParameterName=#03.49 Geschwindigkeit v3
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub4A]
+ParameterName=Menu 03 Sollwertauswahl4A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub4B]
+ParameterName=Menu 03 Sollwertauswahl4B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub4C]
+ParameterName=Menu 03 Sollwertauswahl4C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub4D]
+ParameterName=Menu 03 Sollwertauswahl4D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub4E]
+ParameterName=Menu 03 Sollwertauswahl4E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub4F]
+ParameterName=Menu 03 Sollwertauswahl4F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub50]
+ParameterName=#03.50 Beschleunigung +t3
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub51]
+ParameterName=#03.51 Verzoegerung -t3
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub52]
+ParameterName=#03.52 Stuetzstelle P3
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub53]
+ParameterName=#03.53 Geschwindigkeit v4
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub54]
+ParameterName=#03.54 Beschleunigung +t4
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub55]
+ParameterName=#03.55 Verzoegerung -t4
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub56]
+ParameterName=#03.56 Stuetzstelle P4
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub57]
+ParameterName=#03.57 Geschwindigkeit v5
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub58]
+ParameterName=#03.58 Beschleunigung +t5
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub59]
+ParameterName=#03.59 Verzoegerung -t5
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub5A]
+ParameterName=Menu 03 Sollwertauswahl5A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub5B]
+ParameterName=Menu 03 Sollwertauswahl5B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub5C]
+ParameterName=Menu 03 Sollwertauswahl5C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub5D]
+ParameterName=Menu 03 Sollwertauswahl5D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub5E]
+ParameterName=Menu 03 Sollwertauswahl5E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub5F]
+ParameterName=Menu 03 Sollwertauswahl5F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub60]
+ParameterName=#03.60 Stuetzstelle P5
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub61]
+ParameterName=#03.61 Geschwindigkeit v6
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub62]
+ParameterName=#03.62 Beschleunigung +t6
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub63]
+ParameterName=#03.63 Verzoegerung -t6
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub64]
+ParameterName=#03.64 Stuetzstelle P6
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub65]
+ParameterName=#03.65 Geschwindigkeit v7
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub66]
+ParameterName=#03.66 Beschleunigung +t7
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub67]
+ParameterName=#03.67 Verzoegerung -t7
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub68]
+ParameterName=#03.68 Stuetzstelle P7
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub69]
+ParameterName=#03.69 Geschwindigkeit v8
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub6A]
+ParameterName=Menu 03 Sollwertauswahl6A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub6B]
+ParameterName=Menu 03 Sollwertauswahl6B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub6C]
+ParameterName=Menu 03 Sollwertauswahl6C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub6D]
+ParameterName=Menu 03 Sollwertauswahl6D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub6E]
+ParameterName=Menu 03 Sollwertauswahl6E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub6F]
+ParameterName=Menu 03 Sollwertauswahl6F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub70]
+ParameterName=#03.70 Beschleunigung +t8
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub71]
+ParameterName=#03.71 Verzoegerung -t8
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub72]
+ParameterName=#03.72 Stuetzstelle P8
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub73]
+ParameterName=#03.73 Geschwindigkeit v9
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub74]
+ParameterName=#03.74 Beschleunigung +t9
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub75]
+ParameterName=#03.75 Verzoegerung -t9
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub76]
+ParameterName=#03.76 Stuetzstelle P9
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub77]
+ParameterName=#03.77 Geschwindigkeit v10
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub78]
+ParameterName=#03.78 Beschleunigung +t10
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub79]
+ParameterName=#03.79 Verzoegerung -t10
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub7A]
+ParameterName=Menu 03 Sollwertauswahl7A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub7B]
+ParameterName=Menu 03 Sollwertauswahl7B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub7C]
+ParameterName=Menu 03 Sollwertauswahl7C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub7D]
+ParameterName=Menu 03 Sollwertauswahl7D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub7E]
+ParameterName=Menu 03 Sollwertauswahl7E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub7F]
+ParameterName=Menu 03 Sollwertauswahl7F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub80]
+ParameterName=#03.80 Stuetzstelle P10
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub81]
+ParameterName=#03.81 Geschwindigkeit v11
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub82]
+ParameterName=#03.82 Beschleunigung +t11
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub83]
+ParameterName=#03.83 Verzoegerung -t11
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub84]
+ParameterName=#03.84 Stuetzstelle P11
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub85]
+ParameterName=#03.85 Geschwindigkeit v12
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub86]
+ParameterName=#03.86 Beschleunigung +t12
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub87]
+ParameterName=#03.87 Verzoegerung -t12
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub88]
+ParameterName=#03.88 Stuetzstelle P12
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub89]
+ParameterName=#03.89 Geschwindigkeit v13
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub8A]
+ParameterName=Menu 03 Sollwertauswahl8A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub8B]
+ParameterName=Menu 03 Sollwertauswahl8B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub8C]
+ParameterName=Menu 03 Sollwertauswahl8C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub8D]
+ParameterName=Menu 03 Sollwertauswahl8D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub8E]
+ParameterName=Menu 03 Sollwertauswahl8E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub8F]
+ParameterName=Menu 03 Sollwertauswahl8F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2003sub90]
+ParameterName=#03.90 Beschleunigung +t13
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub91]
+ParameterName=#03.91 Verzoegerung -t13
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub92]
+ParameterName=#03.92 Stuetzstelle P13
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-10000
+HighLimit=10000
+
+[2003sub93]
+ParameterName=#03.93 Geschwindigkeit v14
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=-3600
+HighLimit=3600
+
+[2003sub94]
+ParameterName=#03.94 Beschleunigung +t14
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2003sub95]
+ParameterName=#03.95 Verzoegerung -t14
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004]
+ParameterName=Menu 04 Positionsregelung
+ObjectType=0x9
+SubNumber=81
+
+[2004sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=80
+PDOMapping=0
+
+[2004sub1]
+ParameterName=#04.01 Eingang MAN Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2004sub2]
+ParameterName=#04.02 Anwahl MAN Bus
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2004sub3]
+ParameterName=#04.03 manuelle Fahrt
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2004sub4]
+ParameterName=#04.04 Anwahl Richtung manuelle Fahrt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2004sub5]
+ParameterName=#04.05 Anwahl vSchleich manuelle Fahrt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2004sub6]
+ParameterName=#04.06 Anwahl vEil manuelle Fahrt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2004sub7]
+ParameterName=#04.07 vSchleich manuelle Fahrt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=80
+PDOMapping=0
+LowLimit=0000
+HighLimit=36000
+
+[2004sub8]
+ParameterName=#04.08 vEil manuelle Fahrt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1200
+PDOMapping=0
+LowLimit=0
+HighLimit=36000
+
+[2004sub9]
+ParameterName=#04.09 Deaktivierung Positionsregler
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2004subA]
+ParameterName=Menu 04 Positionsregelung0A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004subB]
+ParameterName=Menu 04 Positionsregelung0B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004subC]
+ParameterName=Menu 04 Positionsregelung0C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004subD]
+ParameterName=Menu 04 Positionsregelung0D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004subE]
+ParameterName=Menu 04 Positionsregelung0E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004subF]
+ParameterName=Menu 04 Positionsregelung0F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub10]
+ParameterName=#04.10 Soll Position Bus
+ObjectType=0x7
+DataType=0x0004
+AccessType=rwr
+DefaultValue=90000
+PDOMapping=1
+LowLimit=-360000
+HighLimit=360000
+
+[2004sub11]
+ParameterName=#04.11 Soll Position aktuell
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[2004sub12]
+ParameterName=#04.12 Position Geber 1
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[2004sub13]
+ParameterName=#04.13 Position Geber 2
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[2004sub14]
+ParameterName=#04.14 Position Geber Simulation
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[2004sub15]
+ParameterName=#04.15 Auswahl IstPosition
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=3
+
+[2004sub16]
+ParameterName=#04.16 Ist Position
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[2004sub17]
+ParameterName=#04.17 Differenz Position
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=1
+
+[2004sub18]
+ParameterName=#04.18 Positionsregler P-Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=10
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004sub19]
+ParameterName=#04.19 Geschwindigkeit vmax
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=1200
+PDOMapping=1
+LowLimit=0
+HighLimit=36000
+
+[2004sub1A]
+ParameterName=Menu 04 Positionsregelung11
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub1B]
+ParameterName=Menu 04 Positionsregelung1B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub1C]
+ParameterName=Menu 04 Positionsregelung1C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub1D]
+ParameterName=Menu 04 Positionsregelung1D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub1E]
+ParameterName=Menu 04 Positionsregelung1E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub1F]
+ParameterName=Menu 04 Positionsregelung1F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub20]
+ParameterName=#04.20 nsoll
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2004sub21]
+ParameterName=#04.21 Zulaessige Abweichung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=100
+PDOMapping=0
+LowLimit=0
+HighLimit=6000
+
+[2004sub22]
+ParameterName=#04.22 Abweichung Position
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2004sub23]
+ParameterName=#04.23 Positionsfehler
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2004sub24]
+ParameterName=#04.24 Geschwindigkeit vA0
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=1200
+PDOMapping=1
+LowLimit=0
+HighLimit=36000
+
+[2004sub25]
+ParameterName=#04.25 Geschwindigkeit vA90
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=1200
+PDOMapping=1
+LowLimit=0
+HighLimit=36000
+
+[2004sub26]
+ParameterName=#04.26 Beschleinugungszeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004sub27]
+ParameterName=#04.27 Verzoegerungszeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004sub28]
+ParameterName=#04.28 S-Rampe Zeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=10
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004sub29]
+ParameterName=#04.29 Rampe Manuelle Fahrt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=1
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2004sub2A]
+ParameterName=Menu 04 Positionsregelung2A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub2B]
+ParameterName=Menu 04 Positionsregelung2B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub2C]
+ParameterName=Menu 04 Positionsregelung2C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub2D]
+ParameterName=Menu 04 Positionsregelung2D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub2E]
+ParameterName=Menu 04 Positionsregelung2E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub2F]
+ParameterName=Menu 04 Positionsregelung2F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub30]
+ParameterName=#04.30 SSI Ueberwachung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=64
+
+[2004sub31]
+ParameterName=#04.31 SSI Fehleranzahl
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=0
+HighLimit=3
+
+[2004sub32]
+ParameterName=#04.32 Bremse t auf
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=20
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004sub33]
+ParameterName=#04.33 Bremse t zu
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=10
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004sub34]
+ParameterName=#04.34 Toleranz
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=10
+PDOMapping=0
+LowLimit=0
+HighLimit=9000
+
+[2004sub35]
+ParameterName=#04.35 Istwert in Sollpositionsbereich
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2004sub36]
+ParameterName=#04.36 Fahrbereich min
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-16000000
+HighLimit=16000000
+
+[2004sub37]
+ParameterName=#04.37 Fahrbereich max
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-16000000
+HighLimit=16000000
+
+[2004sub38]
+ParameterName=#04.38 Eigenschaft Software Endschalter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=2
+
+[2004sub39]
+ParameterName=#04.39 Totbereich vor Sollposition
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004sub3A]
+ParameterName=Menu 04 Positionsregelung3A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub3B]
+ParameterName=Menu 04 Positionsregelung3B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub3C]
+ParameterName=Menu 04 Positionsregelung3C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub3D]
+ParameterName=Menu 04 Positionsregelung3D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub3E]
+ParameterName=Menu 04 Positionsregelung3E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub3F]
+ParameterName=Menu 04 Positionsregelung3F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub40]
+ParameterName=#04.40 Totbereich nach Sollposition
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2004sub41]
+ParameterName=#04.41 Zustandsregister digital
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2004sub42]
+ParameterName=#04.42 Zustandsregister analog
+ObjectType=0x7
+DataType=0x001b
+AccessType=ro
+PDOMapping=1
+
+[2004sub43]
+ParameterName=#04.43 Steuerregister Digitalausgaenge
+ObjectType=0x7
+DataType=0x0006
+AccessType=rww
+DefaultValue=0x0000
+PDOMapping=1
+LowLimit=0x0000
+HighLimit=0x0FFF
+
+[2004sub44]
+ParameterName=#04.44 Start per Bus
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2004sub45]
+ParameterName=#04.45 Start/Stop
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2004sub46]
+ParameterName=#04.46 Zustandsregister analog komprimiert
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=1
+
+[2004sub47]
+ParameterName=#04.47 Initwert Steuerregister
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+LowLimit=0x0000
+HighLimit=0x0FFF
+
+[2004sub48]
+ParameterName=#04.48 Aktivierung Achssimulation
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub49]
+ParameterName=#04.49 Invertierung Reserveeingaenge POSI01
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0000
+PDOMapping=0
+LowLimit=0x0000
+HighLimit=0x03FF
+
+[2004sub4A]
+ParameterName=Menu 04 Positionsregelung4A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub4B]
+ParameterName=Menu 04 Positionsregelung4B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub4C]
+ParameterName=Menu 04 Positionsregelung4C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub4D]
+ParameterName=Menu 04 Positionsregelung4D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub4E]
+ParameterName=Menu 04 Positionsregelung4E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub4F]
+ParameterName=Menu 04 Positionsregelung4F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2004sub50]
+ParameterName=#04.50 Position Geber Bus
+ObjectType=0x7
+DataType=0x0004
+AccessType=rww
+DefaultValue=0
+PDOMapping=1
+LowLimit=-16000000
+HighLimit=16000000
+
+[2005]
+ParameterName=Menu 05 Drehzahlregelung
+ObjectType=0x9
+SubNumber=39
+
+[2005sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=38
+PDOMapping=0
+
+[2005sub1]
+ParameterName=#05.01 Sollwert nach Ausblendung
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2005sub2]
+ParameterName=#05.02 Drehzahlistwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2005sub3]
+ParameterName=#05.03 Filter nist
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=200
+
+[2005sub4]
+ParameterName=#05.04 Drehzahlistwert nach Filter
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2005sub5]
+ParameterName=#05.05 n Regler Regelabweichung
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2005sub6]
+ParameterName=#05.06 nist D Anteil Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=100
+
+[2005sub7]
+ParameterName=#05.07 nist D Anteil Filter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2005sub8]
+ParameterName=#05.08 n Regler P Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=10000
+PDOMapping=0
+LowLimit=0
+HighLimit=64000
+
+[2005sub9]
+ParameterName=#05.09 n Regler I Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=21
+PDOMapping=0
+LowLimit=0
+HighLimit=20000
+
+[2005subA]
+ParameterName=Menu 05 Drehzahlregelung0A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005subB]
+ParameterName=Menu 05 Drehzahlregelung0B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005subC]
+ParameterName=Menu 05 Drehzahlregelung0C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005subD]
+ParameterName=Menu 05 Drehzahlregelung0D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005subE]
+ParameterName=Menu 05 Drehzahlregelung0E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005subF]
+ParameterName=Menu 05 Drehzahlregelung0F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub10]
+ParameterName=#05.10 n Regler Ausgang max
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2005sub11]
+ParameterName=#05.11 n Regler Ausgang
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2005sub12]
+ParameterName=#05.12 Sollwert OpenLoop
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2005sub13]
+ParameterName=#05.13 OpenLoop Betrieb
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2005sub14]
+ParameterName=#05.14 Schwelle n=0
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=5
+PDOMapping=0
+LowLimit=0
+HighLimit=200
+
+[2005sub15]
+ParameterName=#05.15 Schwelle Ueberdrehzahl
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=120
+PDOMapping=0
+LowLimit=100
+HighLimit=150
+
+[2005sub16]
+ParameterName=#05.16 Drehzahl = 0
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2005sub17]
+ParameterName=#05.17 Ueberdrehzahl
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2005sub18]
+ParameterName=#05.18 nist D Anteil Wert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2005sub19]
+ParameterName=#05.19 Deaktivierung Ueberdrehzahl Ueberwachung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2005sub1A]
+ParameterName=Menu 05 Drehzahlregelung1A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub1B]
+ParameterName=Menu 05 Drehzahlregelung1B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub1C]
+ParameterName=Menu 05 Drehzahlregelung1C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub1D]
+ParameterName=Menu 05 Drehzahlregelung1D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub1E]
+ParameterName=Menu 05 Drehzahlregelung1E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub1F]
+ParameterName=Menu 05 Drehzahlregelung1F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub20]
+ParameterName=Menu 05 Drehzahlregelung20
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub21]
+ParameterName=#05.21 Rechnerischer Drehzahlwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2005sub22]
+ParameterName=Menu 05 Drehzahlregelung22
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub23]
+ParameterName=Menu 05 Drehzahlregelung23
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub24]
+ParameterName=Menu 05 Drehzahlregelung24
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub25]
+ParameterName=Menu 05 Drehzahlregelung25
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2005sub26]
+ParameterName=#05.26 Aktivierung sensorlose Regelung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2006]
+ParameterName=Menu 06 Stromregelung
+ObjectType=0x9
+SubNumber=88
+
+[2006sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=88
+PDOMapping=0
+
+[2006sub1]
+ParameterName=#06.01 Istwert Scheinstrom
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub2]
+ParameterName=#06.02 Prozentualer Scheinstrom
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub3]
+ParameterName=#06.03 Istwert Wirkstrom
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub4]
+ParameterName=#06.04 Prozentualer Wirkstrom
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub5]
+ParameterName=#06.05 Istwert Magnetisierungsstrom
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub6]
+ParameterName=#06.06 Prozentualer Magnetisierungsstrom
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub7]
+ParameterName=#06.07 n-Regler, Ausgang
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub8]
+ParameterName=#06.08 Sollwert Wirkstrom
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub9]
+ParameterName=#06.09 Filterzeitkonstante Stromsollwert
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=250
+
+[2006subA]
+ParameterName=Menu 06 Stromregelung0A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006subB]
+ParameterName=Menu 06 Stromregelung0B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006subC]
+ParameterName=Menu 06 Stromregelung0C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006subD]
+ParameterName=Menu 06 Stromregelung0D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006subE]
+ParameterName=Menu 06 Stromregelung0E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006subF]
+ParameterName=Menu 06 Stromregelung0F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub10]
+ParameterName=#06.10 Stromsollwert nach Filter
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub11]
+ParameterName=#06.11 I-Regler, Regelabweichung
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub12]
+ParameterName=#06.12 I-Regler, P- Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=640
+PDOMapping=0
+LowLimit=0
+HighLimit=16000
+
+[2006sub13]
+ParameterName=#06.13 I-Regler, I- Verstarkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=49
+PDOMapping=0
+LowLimit=0
+HighLimit=10000
+
+[2006sub15]
+ParameterName=#06.15 I-Regler, Ausgang max
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub16]
+ParameterName=#06.16 I-Regler, Ausgang
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub17]
+ParameterName=#06.17 Aufsteuerschwelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=500
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2006sub18]
+ParameterName=#06.18 Aufsteuerzeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=500
+PDOMapping=0
+LowLimit=10
+HighLimit=5000
+
+[2006sub19]
+ParameterName=#06.19 Strom Nullschwelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=20
+PDOMapping=0
+LowLimit=0
+HighLimit=100
+
+[2006sub1A]
+ParameterName=Menu 06 Stromregelung1A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub1B]
+ParameterName=Menu 06 Stromregelung1B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub1C]
+ParameterName=Menu 06 Stromregelung1C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub1D]
+ParameterName=Menu 06 Stromregelung1D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub1E]
+ParameterName=Menu 06 Stromregelung1E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub1F]
+ParameterName=Menu 06 Stromregelung1F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub20]
+ParameterName=#06.20 Ausgang offen
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub21]
+ParameterName=#06.21 Regler Ixt Zeitkonstante
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=9
+PDOMapping=0
+LowLimit=0
+HighLimit=100
+
+[2006sub22]
+ParameterName=#06.22 Regler Ixt Akkumulator
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub23]
+ParameterName=Menu 06 Stromregelung23
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub24]
+ParameterName=#06.24 Motorschutz
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub25]
+ParameterName=#06.25 Interne Stromgrenze
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=1000
+PDOMapping=1
+LowLimit=0
+HighLimit=1000
+
+[2006sub26]
+ParameterName=#06.26 Stromgrenze ueber Option1 oder Option2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub27]
+ParameterName=#06.27 Auswahl Stromgrenze Id
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2006sub28]
+ParameterName=#06.28 gewaehlte Stromgrenze Id
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub29]
+ParameterName=#06.29 Dynamischer Spitzenstrom
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=200
+PDOMapping=1
+LowLimit=0
+HighLimit=200
+
+[2006sub2A]
+ParameterName=Menu 06 Stromregelung2A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub2B]
+ParameterName=Menu 06 Stromregelung2B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub2C]
+ParameterName=Menu 06 Stromregelung2C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub2D]
+ParameterName=Menu 06 Stromregelung2D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub2E]
+ParameterName=Menu 06 Stromregelung2E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub2F]
+ParameterName=Menu 06 Stromregelung2F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub30]
+ParameterName=#06.30 Regler Stromgrenze
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub31]
+ParameterName=#06.31 Prozentualer Motornennstrom
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=1
+
+[2006sub32]
+ParameterName=#06.32 Vergleichstromgrenze
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub33]
+ParameterName=#06.33 Resultierende Scheinstromgrenze
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub34]
+ParameterName=#06.34 Resultierende Wirkstromgrenze
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub35]
+ParameterName=#06.35 Resultierender Magnetisierungsstrom Sollwert
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub36]
+ParameterName=#06.36 Differenz Magnetisierung
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub37]
+ParameterName=#06.37  Magnetisierungsregler P Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=765
+PDOMapping=0
+LowLimit=0
+HighLimit=16000
+
+[2006sub38]
+ParameterName=#06.38 Magnetisierungsregler I Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=17
+PDOMapping=0
+LowLimit=0
+HighLimit=10000
+
+[2006sub39]
+ParameterName=#06.39 Magnetisierungsregler Ausgang max
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=500
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2006sub3A]
+ParameterName=Menu 06 Stromregelung3A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub3B]
+ParameterName=Menu 06 Stromregelung3B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub3C]
+ParameterName=Menu 06 Stromregelung3C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub3D]
+ParameterName=Menu 06 Stromregelung3D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub3E]
+ParameterName=Menu 06 Stromregelung3E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub3F]
+ParameterName=Menu 06 Stromregelung3F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub40]
+ParameterName=#06.40 Magnetisierungsregler Ausgang
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub41]
+ParameterName=#06.41 OpenLoop Sollwert nach Ausblendung
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub42]
+ParameterName=#06.42 Beschleunigung Rampe
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=200
+PDOMapping=0
+LowLimit=0
+HighLimit=6500
+
+[2006sub43]
+ParameterName=#06.43 Verzerung Rampe
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=20
+PDOMapping=0
+LowLimit=0
+HighLimit=6500
+
+[2006sub44]
+ParameterName=#06.44 Sollwert nach Rampe
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub45]
+ParameterName=#06.45 Regler Korrektur OpenLoop P Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=220
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2006sub46]
+ParameterName=#06.46 Regler Korrektur OpenLoop I Verstaerkung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=156
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2006sub47]
+ParameterName=#06.47 Korrekturwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub48]
+ParameterName=#06.48 Sollwert OpenLoop
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2006sub49]
+ParameterName=#06.49 EFC aktiviert
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub4A]
+ParameterName=Menu 06 Stromregelung4A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub4B]
+ParameterName=Menu 06 Stromregelung4B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub4C]
+ParameterName=Menu 06 Stromregelung4C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub4D]
+ParameterName=Menu 06 Stromregelung4D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub4E]
+ParameterName=Menu 06 Stromregelung4E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub4F]
+ParameterName=Menu 06 Stromregelung4F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub50]
+ParameterName=#06.50 Heavy Duty
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2006sub51]
+ParameterName=#06.51 Heavy Duty Ixt-Zeitkonstante
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=15
+PDOMapping=0
+LowLimit=1
+HighLimit=30
+
+[2006sub52]
+ParameterName=#06.52 Heavy Duty Ixt-Akkumulator
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2006sub53]
+ParameterName=#06.53 Aktivierung Regelung UDCmax
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[2006sub54]
+ParameterName=#06.54 Schwelle Regelung UDCmax
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=750
+PDOMapping=0
+LowLimit=650
+HighLimit=800
+
+[2006sub55]
+ParameterName=Menu 06 Stromregelung55
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub56]
+ParameterName=Menu 06 Stromregelung56
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub57]
+ParameterName=Menu 06 Stromregelung57
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2006sub58]
+ParameterName=#06.58 EFC Motorschutz
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2007]
+ParameterName=Menu 07 Motorparameter Modulation
+ObjectType=0x9
+SubNumber=50
+
+[2007sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=49
+PDOMapping=0
+
+[2007sub1]
+ParameterName=#07.01 Motor Nenndrehzahl
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1750
+PDOMapping=0
+LowLimit=1
+HighLimit=4000
+
+[2007sub2]
+ParameterName=#07.02 Motor Nennfrequenz
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=600
+PDOMapping=0
+LowLimit=1
+HighLimit=2000
+
+[2007sub3]
+ParameterName=#07.03 Motor Nennspannung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=367
+PDOMapping=0
+LowLimit=1
+HighLimit=460
+
+[2007sub4]
+ParameterName=#07.04 Motor Nennstrom
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=148
+PDOMapping=0
+LowLimit=1
+HighLimit=2500
+
+[2007sub5]
+ParameterName=#07.05 Leistungsfaktor
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=70
+PDOMapping=0
+LowLimit=0
+HighLimit=100
+
+[2007sub6]
+ParameterName=#07.06 Anzahl Motorpole
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=2
+HighLimit=32
+
+[2007sub7]
+ParameterName=#07.07 Messung Motordaten / Selbstabgleich
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[2007sub8]
+ParameterName=#07.08 Motor Statorinduktivitaet
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=420
+PDOMapping=0
+LowLimit=0
+HighLimit=3200
+
+[2007sub9]
+ParameterName=#07.09 Motor Statorwiderstand
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=59
+PDOMapping=0
+LowLimit=0
+HighLimit=3200
+
+[2007subA]
+ParameterName=Menu 07 Motorparameter0A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007subB]
+ParameterName=Menu 07 Motorparameter0B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007subC]
+ParameterName=Menu 07 Motorparameter0C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007subD]
+ParameterName=Menu 07 Motorparameter0D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007subE]
+ParameterName=Menu 07 Motorparameter0E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007subF]
+ParameterName=Menu 07 Motorparameter0F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub10]
+ParameterName=#07.10 OpenLoop Kennlinie
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2007sub11]
+ParameterName=#07.11 Spannungsanhebung Boost
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=30
+PDOMapping=0
+LowLimit=0
+HighLimit=250
+
+[2007sub12]
+ParameterName=#07.12 Motor Ixt Zeitkonstante
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=300
+PDOMapping=0
+LowLimit=0
+HighLimit=600
+
+[2007sub13]
+ParameterName=#07.13 Motor Ixt Akkumulator
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2007sub14]
+ParameterName=#07.14 Motorschutz Modus Ixt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[2007sub15]
+ParameterName=#07.15 Motorschutz Modus Temperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[2007sub16]
+ParameterName=#07.16 Warnschwelle Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=130
+PDOMapping=0
+LowLimit=100
+HighLimit=180
+
+[2007sub17]
+ParameterName=#07.17 Abschaltschwelle Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=150
+PDOMapping=0
+LowLimit=100
+HighLimit=180
+
+[2007sub18]
+ParameterName=#07.18 Taktfrequenz
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=2
+PDOMapping=0
+LowLimit=1
+HighLimit=3
+
+[2007sub19]
+ParameterName=#07.19 Warnung Motor Ixt
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2007sub1A]
+ParameterName=Menu 07 Motorparameter1A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub1B]
+ParameterName=Menu 07 Motorparameter1B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub1C]
+ParameterName=Menu 07 Motorparameter1C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub1D]
+ParameterName=Menu 07 Motorparameter1D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub1E]
+ParameterName=Menu 07 Motorparameter1E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub1F]
+ParameterName=Menu 07 Motorparameter1F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub20]
+ParameterName=#07.20 Alarm Motor Ixt
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2007sub21]
+ParameterName=#07.21 Art Feldschwaechung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2007sub22]
+ParameterName=#07.22 Bereich der Spannungsreduzierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=50
+PDOMapping=0
+LowLimit=0
+HighLimit=500
+
+[2007sub23]
+ParameterName=#07.23 Drehmoment
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2007sub24]
+ParameterName=#07.24 Motorspannung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2007sub25]
+ParameterName=#07.25 Faktor Motor Nennspannung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=100
+PDOMapping=0
+LowLimit=100
+HighLimit=150
+
+[2007sub26]
+ParameterName=#07.26 Rotorzeitkonstante
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2007sub27]
+ParameterName=#07.27 Saettigungskonstante1
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+DefaultValue=324230
+PDOMapping=0
+LowLimit=-2147483648
+HighLimit=2147483647
+
+[2007sub28]
+ParameterName=#07.28 Saettigungskonstante2
+ObjectType=0x7
+DataType=0x0004
+AccessType=rw
+DefaultValue=-62965
+PDOMapping=0
+LowLimit=-2147483648
+HighLimit=2147483647
+
+[2007sub29]
+ParameterName=#07.29 Aktivierung Rotorzeitkonstante Tuning
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2007sub2A]
+ParameterName=Menu 07 Motorparameter2A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub2B]
+ParameterName=Menu 07 Motorparameter2B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub2C]
+ParameterName=Menu 07 Motorparameter2C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub2D]
+ParameterName=Menu 07 Motorparameter2D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub2E]
+ParameterName=Menu 07 Motorparameter2E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub2F]
+ParameterName=Menu 07 Motorparameter2F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2007sub30]
+ParameterName=#07.30 Art EFC Motorschutz
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[2007sub31]
+ParameterName=#07.31 Zeit EFC Motorschutz
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=300
+
+[2008]
+ParameterName=Menu 08 Ansteuerlogik und Komparatoren
+ObjectType=0x9
+SubNumber=137
+
+[2008sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=137
+PDOMapping=0
+
+[2008sub1]
+ParameterName=#08.01 Eingang RFG
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub2]
+ParameterName=#08.02 Interne Freigabe
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=1
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2008sub3]
+ParameterName=#08.03 Freigabe über serielle Schnittstelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2008sub4]
+ParameterName=#08.04 Freigabe über CAN
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub5]
+ParameterName=#08.05 Aktivierung Freigabe über Bus
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=2
+
+[2008sub6]
+ParameterName=#08.06 Status Freigabe
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub7]
+ParameterName=#08.07 Betriebsbereit
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub8]
+ParameterName=#08.08 Regler aktiv (RUN)
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub9]
+ParameterName=#08.09 Modus Meldekontakt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2008subA]
+ParameterName=Menu 08 Ansteuerlogik0A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008subB]
+ParameterName=Menu 08 Ansteuerlogik0B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008subC]
+ParameterName=Menu 08 Ansteuerlogik0C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008subD]
+ParameterName=Menu 08 Ansteuerlogik0D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008subE]
+ParameterName=Menu 08 Ansteuerlogik0E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008subF]
+ParameterName=Menu 08 Ansteuerlogik0F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub10]
+ParameterName=#08.10 Ausgang BTB Meldekontakt
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub11]
+ParameterName=#08.11 Betriebsstundenzaehler
+ObjectType=0x7
+DataType=0x0007
+AccessType=rwr
+PDOMapping=1
+
+[2008sub12]
+ParameterName=#08.12 Zeitintervall Wartung
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=63072000
+PDOMapping=0
+LowLimit=0
+HighLimit=1892160000
+
+[2008sub13]
+ParameterName=#08.13 Restzeit Wartung
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+PDOMapping=0
+
+[2008sub14]
+ParameterName=#08.14 Wartung faellig ausgeführt
+ObjectType=0x7
+DataType=0x0006
+AccessType=rwr
+DefaultValue=0
+PDOMapping=1
+LowLimit=0
+HighLimit=1
+
+[2008sub15]
+ParameterName=#08.15 Kuehlkoerpertemperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=1
+
+[2008sub16]
+ParameterName=#08.16 Einschaltschwelle Luefter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=60
+PDOMapping=0
+LowLimit=0
+HighLimit=100
+
+[2008sub17]
+ParameterName=#08.17 Hysterese Luefter
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=5
+PDOMapping=0
+LowLimit=0
+HighLimit=30
+
+[2008sub18]
+ParameterName=#08.18 Ausgang LKK
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub19]
+ParameterName=#08.19 Abschaltschwelle Kuelkoerpertemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=80
+PDOMapping=0
+LowLimit=60
+HighLimit=120
+
+[2008sub1A]
+ParameterName=Menu 08 Ansteuerlogik1A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub1B]
+ParameterName=Menu 08 Ansteuerlogik1B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub1C]
+ParameterName=Menu 08 Ansteuerlogik1C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub1D]
+ParameterName=Menu 08 Ansteuerlogik1D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub1E]
+ParameterName=Menu 08 Ansteuerlogik1E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub1F]
+ParameterName=Menu 08 Ansteuerlogik1F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub20]
+ParameterName=#08.20 Hysterese Abschaltschwelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=5
+PDOMapping=0
+LowLimit=0
+HighLimit=30
+
+[2008sub21]
+ParameterName=#08.21 Zwischenkreisspannung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub22]
+ParameterName=#08.22 Unterspannungsschwelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=160
+PDOMapping=0
+LowLimit=120
+HighLimit=300
+
+[2008sub23]
+ParameterName=#08.23 Einsatzschwelle
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=180
+PDOMapping=0
+LowLimit=100
+HighLimit=500
+
+[2008sub24]
+ParameterName=#08.24 Bypass Schwelle
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=400
+PDOMapping=0
+LowLimit=300
+HighLimit=500
+
+[2008sub25]
+ParameterName=#08.25 Bypass Hysterese
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=20
+PDOMapping=0
+LowLimit=5
+HighLimit=100
+
+[2008sub26]
+ParameterName=#08.26 Ueberspannungsgrenze
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=800
+PDOMapping=0
+LowLimit=750
+HighLimit=830
+
+[2008sub27]
+ParameterName=#08.27 Ausgang Bypass
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub28]
+ParameterName=#08.28 Bremschopper Schwelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=750
+PDOMapping=0
+LowLimit=650
+HighLimit=800
+
+[2008sub29]
+ParameterName=#08.29 Bremschopper Hysterese
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=40
+PDOMapping=0
+LowLimit=5
+HighLimit=100
+
+[2008sub2A]
+ParameterName=Menu 08 Ansteuerlogik2A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub2B]
+ParameterName=Menu 08 Ansteuerlogik2B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub2C]
+ParameterName=Menu 08 Ansteuerlogik2C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub2D]
+ParameterName=Menu 08 Ansteuerlogik2D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub2E]
+ParameterName=Menu 08 Ansteuerlogik2E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub2F]
+ParameterName=Menu 08 Ansteuerlogik2F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub30]
+ParameterName=#08.30 Bremschopper aktiv
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub31]
+ParameterName=#08.31 Eingang Netzausfall
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub32]
+ParameterName=#08.32 Fehlerdauer Netz
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=50
+PDOMapping=0
+LowLimit=0
+HighLimit=6000
+
+[2008sub33]
+ParameterName=#08.33 Netzausfall nach Zeit
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub34]
+ParameterName=#08.34 Aktivierung Netzphasenueberwachung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2008sub35]
+ParameterName=#08.35 Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub36]
+ParameterName=#08.36 Warnschwelle Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=130
+PDOMapping=0
+LowLimit=100
+HighLimit=180
+
+[2008sub37]
+ParameterName=#08.37 Abschaltschwelle Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=150
+PDOMapping=0
+LowLimit=100
+HighLimit=180
+
+[2008sub38]
+ParameterName=#08.38 Warnung Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub39]
+ParameterName=#08.39 Alarm Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub3A]
+ParameterName=Menu 08 Ansteuerlogik3A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub3B]
+ParameterName=Menu 08 Ansteuerlogik3B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub3C]
+ParameterName=Menu 08 Ansteuerlogik3C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub3D]
+ParameterName=Menu 08 Ansteuerlogik3D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub3E]
+ParameterName=Menu 08 Ansteuerlogik3E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub3F]
+ParameterName=Menu 08 Ansteuerlogik3F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub40]
+ParameterName=#08.40 Logbuch Emergency
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[2008sub41]
+ParameterName=#08.41 EFC aktiviert
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub42]
+ParameterName=#08.42 Zeitzaehler
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub43]
+ParameterName=Menu 08 Ansteuerlogik43
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub44]
+ParameterName=Menu 08 Ansteuerlogik44
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub45]
+ParameterName=Menu 08 Ansteuerlogik45
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub46]
+ParameterName=#08.46 Warnung Regler Ixt
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub47]
+ParameterName=#08.47 Warnung Kuehlkoerpertemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub48]
+ParameterName=#08.48 Warnung RB
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub49]
+ParameterName=#08.49 Statuswort Warnungen
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub4A]
+ParameterName=Menu 08 Ansteuerlogik4A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub4B]
+ParameterName=Menu 08 Ansteuerlogik4B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub4C]
+ParameterName=Menu 08 Ansteuerlogik4C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub4D]
+ParameterName=Menu 08 Ansteuerlogik4D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub4E]
+ParameterName=Menu 08 Ansteuerlogik4E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub4F]
+ParameterName=Menu 08 Ansteuerlogik4F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub50]
+ParameterName=Menu 08 Ansteuerlogik50
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub51]
+ParameterName=Menu 08 Ansteuerlogik51
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub52]
+ParameterName=Menu 08 Ansteuerlogik52
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub53]
+ParameterName=Menu 08 Ansteuerlogik53
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub54]
+ParameterName=Menu 08 Ansteuerlogik54
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub55]
+ParameterName=Menu 08 Ansteuerlogik55
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub56]
+ParameterName=Menu 08 Ansteuerlogik56
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub57]
+ParameterName=Menu 08 Ansteuerlogik57
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub58]
+ParameterName=Menu 08 Ansteuerlogik58
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub59]
+ParameterName=Menu 08 Ansteuerlogik59
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub5A]
+ParameterName=Menu 08 Ansteuerlogik5A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub5B]
+ParameterName=Menu 08 Ansteuerlogik5B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub5C]
+ParameterName=Menu 08 Ansteuerlogik5C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub5D]
+ParameterName=Menu 08 Ansteuerlogik5D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub5E]
+ParameterName=Menu 08 Ansteuerlogik5E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub5F]
+ParameterName=Menu 08 Ansteuerlogik5F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub60]
+ParameterName=Menu 08 Ansteuerlogik60
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub61]
+ParameterName=Menu 08 Ansteuerlogik61
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub62]
+ParameterName=Menu 08 Ansteuerlogik62
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub63]
+ParameterName=Menu 08 Ansteuerlogik63
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub64]
+ParameterName=Menu 08 Ansteuerlogik64
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub65]
+ParameterName=Menu 08 Ansteuerlogik65
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub66]
+ParameterName=Menu 08 Ansteuerlogik66
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub67]
+ParameterName=Menu 08 Ansteuerlogik67
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub68]
+ParameterName=Menu 08 Ansteuerlogik68
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub69]
+ParameterName=Menu 08 Ansteuerlogik69
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub6A]
+ParameterName=Menu 08 Ansteuerlogik6A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub6B]
+ParameterName=Menu 08 Ansteuerlogik6B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub6C]
+ParameterName=Menu 08 Ansteuerlogik6C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub6D]
+ParameterName=Menu 08 Ansteuerlogik6D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub6E]
+ParameterName=Menu 08 Ansteuerlogik6E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub6F]
+ParameterName=Menu 08 Ansteuerlogik6F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub70]
+ParameterName=Menu 08 Ansteuerlogik70
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub71]
+ParameterName=Menu 08 Ansteuerlogik71
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub72]
+ParameterName=Menu 08 Ansteuerlogik72
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub73]
+ParameterName=Menu 08 Ansteuerlogik73
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub74]
+ParameterName=Menu 08 Ansteuerlogik74
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub75]
+ParameterName=Menu 08 Ansteuerlogik75
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub76]
+ParameterName=Menu 08 Ansteuerlogik76
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub77]
+ParameterName=Menu 08 Ansteuerlogik77
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub78]
+ParameterName=Menu 08 Ansteuerlogik78
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub79]
+ParameterName=Menu 08 Ansteuerlogik79
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub7A]
+ParameterName=Menu 08 Ansteuerlogik7A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub7B]
+ParameterName=Menu 08 Ansteuerlogik7B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub7C]
+ParameterName=Menu 08 Ansteuerlogik7C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub7D]
+ParameterName=Menu 08 Ansteuerlogik7D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub7E]
+ParameterName=Menu 08 Ansteuerlogik7E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub7F]
+ParameterName=Menu 08 Ansteuerlogik7F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub80]
+ParameterName=Menu 08 Ansteuerlogik80
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub81]
+ParameterName=Menu 08 Ansteuerlogik81
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub82]
+ParameterName=Menu 08 Ansteuerlogik82
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2008sub83]
+ParameterName=#08.83 Netz Ueberspannung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub84]
+ParameterName=#08.84 Wahl Ausgang Netzschuetz
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=6
+
+[2008sub86]
+ParameterName=#08.86 Globale Bremse
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub87]
+ParameterName=#08.87 Modus Bremsensteuerung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2008sub88]
+ParameterName=#08.88 Interne Freigabe EFC
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2008sub89]
+ParameterName=#08.89 BTB EFC
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009]
+ParameterName=Menu 09 Zustandsmeldungen und Fehlerspeichen
+ObjectType=0x9
+SubNumber=73
+
+[2009sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=72
+PDOMapping=0
+
+[2009sub1]
+ParameterName=#09.01 Betriebsbereit
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub2]
+ParameterName=#09.02 Ueberdrehzahl
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub3]
+ParameterName=#09.03 Netzausfall
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub4]
+ParameterName=#09.04 Zwischenkreis Ueberspannung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub5]
+ParameterName=#09.05 Zwischenkreis Unterspannung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub6]
+ParameterName=#09.06 Ausgang offen
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub7]
+ParameterName=#09.07 Fehler Brems-Chopper
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub8]
+ParameterName=#09.08 Ueberlastung Ausgangstransistor
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub9]
+ParameterName=#09.09 Fehler gesteuerter Gleichrichter
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009subA]
+ParameterName=Menu 09 Zustandsmeldungen0A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009subB]
+ParameterName=Menu 09 Zustandsmeldungen0B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009subC]
+ParameterName=Menu 09 Zustandsmeldungen0C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009subD]
+ParameterName=Menu 09 Zustandsmeldungen0D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009subE]
+ParameterName=Menu 09 Zustandsmeldungen0E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009subF]
+ParameterName=Menu 09 Zustandsmeldungen0F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub10]
+ParameterName=#09.10 Fehler Elektronikversorgung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub11]
+ParameterName=#09.11 Hardware Fehler
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub12]
+ParameterName=#09.12 Fehler Parametereingabe
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub13]
+ParameterName=#09.13 Fehler Motortemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub14]
+ParameterName=#09.14 Fehler Motorueberlastung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub15]
+ParameterName=#09.15 Fehler Kuehlkoerpertemperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub16]
+ParameterName=#09.16 Fehler Programm
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub17]
+ParameterName=#09.17 Fehler EEPROM
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub18]
+ParameterName=#09.18 Fehler CAN Bus
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub19]
+ParameterName=#09.19 Fehler Optionsmodul 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub1A]
+ParameterName=Menu 09 Zustandsmeldungen1A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub1B]
+ParameterName=Menu 09 Zustandsmeldungen1B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub1C]
+ParameterName=Menu 09 Zustandsmeldungen1C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub1D]
+ParameterName=Menu 09 Zustandsmeldungen1D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub1E]
+ParameterName=Menu 09 Zustandsmeldungen1E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub1F]
+ParameterName=Menu 09 Zustandsmeldungen1F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub20]
+ParameterName=#09.20 Fehler Optionsmodul 2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub21]
+ParameterName=#09.21 Fehleranzahl Optionsmodul
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2009sub22]
+ParameterName=#09.22 Letzter Fehler
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub23]
+ParameterName=#09.23 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub24]
+ParameterName=#09.24 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub25]
+ParameterName=#09.25 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub26]
+ParameterName=#09.26 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub27]
+ParameterName=#09.27 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub28]
+ParameterName=#09.28 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub29]
+ParameterName=#09.29 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub2A]
+ParameterName=Menu 09 Zustandsmeldungen2A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub2B]
+ParameterName=Menu 09 Zustandsmeldungen2B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub2C]
+ParameterName=Menu 09 Zustandsmeldungen2C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub2D]
+ParameterName=Menu 09 Zustandsmeldungen2D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub2E]
+ParameterName=Menu 09 Zustandsmeldungen2E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub2F]
+ParameterName=Menu 09 Zustandsmeldungen2F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub30]
+ParameterName=#09.30 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub31]
+ParameterName=#09.31 Fehler vor dem Obigen
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2009sub32]
+ParameterName=#09.32 Fehlerstatus
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[2009sub33]
+ParameterName=#09.33 Fehlerruecksetzen
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2009sub34]
+ParameterName=#09.34 Positionsfehler
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub35]
+ParameterName=Menu 09 Zustandsmeldungen35
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub36]
+ParameterName=Menu 09 Zustandsmeldungen36
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub37]
+ParameterName=Menu 09 Zustandsmeldungen37
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub38]
+ParameterName=Menu 09 Zustandsmeldungen38
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub39]
+ParameterName=Menu 09 Zustandsmeldungen39
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub3A]
+ParameterName=Menu 09 Zustandsmeldungen3A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub3B]
+ParameterName=Menu 09 Zustandsmeldungen3B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub3C]
+ParameterName=Menu 09 Zustandsmeldungen3C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub3D]
+ParameterName=Menu 09 Zustandsmeldungen3D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub3E]
+ParameterName=Menu 09 Zustandsmeldungen3E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub3F]
+ParameterName=Menu 09 Zustandsmeldungen3F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub40]
+ParameterName=Menu 09 Zustandsmeldungen40
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub41]
+ParameterName=Menu 09 Zustandsmeldungen41
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub42]
+ParameterName=Menu 09 Zustandsmeldungen42
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub43]
+ParameterName=Menu 09 Zustandsmeldungen43
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub44]
+ParameterName=Menu 09 Zustandsmeldungen44
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub45]
+ParameterName=Menu 09 Zustandsmeldungen45
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub46]
+ParameterName=Menu 09 Zustandsmeldungen46
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2009sub47]
+ParameterName=#09.47 Fehler Kommunikation Master-Slave
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2009sub48]
+ParameterName=#09.48 Fehler Register
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=1
+
+[2010]
+ParameterName=Menu 10 Einstellung sonstige Parameter
+ObjectType=0x9
+SubNumber=53
+
+[2010sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=53
+PDOMapping=0
+
+[2010sub1]
+ParameterName=#10.01 Serielle Adresse
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0x0001
+PDOMapping=0
+LowLimit=0x0001
+HighLimit=0xEFEF
+
+[2010sub3]
+ParameterName=#10.03 Baudrate serielle Snuttstelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=4
+PDOMapping=0
+LowLimit=0
+HighLimit=4
+
+[2010sub4]
+ParameterName=#10.04 Device Name
+ObjectType=0x7
+DataType=0x0009
+AccessType=rw
+DefaultValue=MPCxxxAC
+PDOMapping=0
+
+[2010sub5]
+ParameterName=#10.05 Hardwareversoin
+ObjectType=0x7
+DataType=0x0009
+AccessType=rw
+PDOMapping=0
+
+[2010sub6]
+ParameterName=#10.06 Identifikations-Nummer
+ObjectType=0x7
+DataType=0x0009
+AccessType=rw
+PDOMapping=0
+
+[2010sub7]
+ParameterName=#10.07 Software Versoin
+ObjectType=0x7
+DataType=0x0009
+AccessType=ro
+PDOMapping=0
+
+[2010sub8]
+ParameterName=#10.08 Sicherheitscode Ebene 1
+ObjectType=0x7
+DataType=0x0009
+AccessType=wo
+PDOMapping=0
+
+[2010sub9]
+ParameterName=#10.09 Sicherheitscode Ebene 2
+ObjectType=0x7
+DataType=0x0009
+AccessType=wo
+PDOMapping=0
+
+[2010subA]
+ParameterName=Menu 10 Einstellung0A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010subB]
+ParameterName=Menu 10 Einstellung0B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010subC]
+ParameterName=Menu 10 Einstellung0C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010subD]
+ParameterName=Menu 10 Einstellung0D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010subE]
+ParameterName=Menu 10 Einstellung0E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010subF]
+ParameterName=Menu 10 Einstellung0F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub10]
+ParameterName=#10.10 Sicherheitscode Ebene 3
+ObjectType=0x7
+DataType=0x0009
+AccessType=wo
+PDOMapping=0
+
+[2010sub11]
+ParameterName=#10.11 Modus Ueberwachung Bremswiderstand
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2010sub12]
+ParameterName=#10.12 Ixt - Akkumulator Bremswiderstand
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2010sub13]
+ParameterName=#10.13 Einschaltdauer Bremswiderstand
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=6
+PDOMapping=0
+LowLimit=1
+HighLimit=100
+
+[2010sub14]
+ParameterName=#10.14 Periodendauer Bremswiderstand
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=12
+PDOMapping=0
+LowLimit=1
+HighLimit=300
+
+[2010sub15]
+ParameterName=#10.15 Regler Nennstrom
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=20
+PDOMapping=0
+LowLimit=0
+HighLimit=250
+
+[2010sub16]
+ParameterName=Menu 10 Einstellung16
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub17]
+ParameterName=Menu 10 Einstellung17
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub18]
+ParameterName=#10.18 Speichern Auslieferung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2010sub19]
+ParameterName=#10.19 Ruecksetzen auf Auslieferung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2010sub1A]
+ParameterName=Menu 10 Einstellung1A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub1B]
+ParameterName=Menu 10 Einstellung1B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub1C]
+ParameterName=Menu 10 Einstellung1C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub1D]
+ParameterName=Menu 10 Einstellung1D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub1E]
+ParameterName=Menu 10 Einstellung1E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub1F]
+ParameterName=Menu 10 Einstellung1F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub20]
+ParameterName=#10.20 Dynamischer Spitzenstrom
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=200
+PDOMapping=0
+LowLimit=0
+HighLimit=200
+
+[2010sub21]
+ParameterName=#10.21 Zeit fuer dynamischen Spitzenstrom
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2010sub22]
+ParameterName=#10.22 Vendor ID
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x000001AA
+PDOMapping=0
+
+[2010sub23]
+ParameterName=#10.23 CAN-Bus Aktivierung
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2010sub24]
+ParameterName=#10.24 CANopen Node-ID
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+LowLimit=1
+HighLimit=127
+
+[2010sub25]
+ParameterName=#10.25 CAN Baudratenindex
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=8
+
+[2010sub26]
+ParameterName=#10.26 CANopen Modes of operation
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=3
+PDOMapping=0
+LowLimit=1
+HighLimit=3
+
+[2010sub27]
+ParameterName=#10.27 Software Zeitstempel
+ObjectType=0x7
+DataType=0x0009
+AccessType=ro
+PDOMapping=0
+
+[2010sub28]
+ParameterName=#10.28 Produktschluessel
+ObjectType=0x7
+DataType=0x000a
+AccessType=ro
+PDOMapping=0
+
+[2010sub29]
+ParameterName=#10.29 Aktivierungsschluessel
+ObjectType=0x7
+DataType=0x000a
+AccessType=wo
+PDOMapping=0
+LowLimit=0x00000000000000000000
+HighLimit=0xFFFFFFFFFFFFFFFFFFFF
+
+[2010sub2A]
+ParameterName=Menu 10 Einstellung2A
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub2B]
+ParameterName=Menu 10 Einstellung2B
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub2C]
+ParameterName=Menu 10 Einstellung2C
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub2D]
+ParameterName=Menu 10 Einstellung2D
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub2E]
+ParameterName=Menu 10 Einstellung2E
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub2F]
+ParameterName=Menu 10 Einstellung2F
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub30]
+ParameterName=Menu 10 Einstellung30
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub31]
+ParameterName=#10.31 Kompatibilitaet
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[2010sub32]
+ParameterName=Menu 10 Einstellung32
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub33]
+ParameterName=Menu 10 Einstellung33
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2010sub34]
+ParameterName=#10.34 Betriebsart Master-Slave
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=2
+
+[2010sub35]
+ParameterName=#10.35 Zustandsregister Master-Slave
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=1
+
+[2011]
+ParameterName=Menu 11 Optionsmodul 1 POSI01
+ObjectType=0x9
+SubNumber=149
+
+[2011sub0]
+ParameterName=NrOfObjects
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=148
+PDOMapping=0
+
+[2011sub1]
+ParameterName=#11.01 Identifikation Modul
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub2]
+ParameterName=#11.02 Betriebsbereit
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub3]
+ParameterName=#11.03 HW-Fehler Optionsmodul
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub4]
+ParameterName=#11.04 SW-Fehler Optionsmodul
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub5]
+ParameterName=#11.05 Fehler ruecksetzen
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2011sub6]
+ParameterName=#11.06 Drehzahlistwert
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2011sub7]
+ParameterName=#11.07 Softwareversion
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub8]
+ParameterName=#11.08 Betriebsstundenzaehler
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[2011sub9]
+ParameterName=#11.09 Hardwareversion
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011subA]
+ParameterName=Menu 11 Posi0A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011subB]
+ParameterName=Menu 11 Posi0B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011subC]
+ParameterName=Menu 11 Posi0C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011subD]
+ParameterName=Menu 11 Posi0D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011subE]
+ParameterName=Menu 11 Posi0E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011subF]
+ParameterName=Menu 11 Posi0F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub10]
+ParameterName=Menu 11 Posi10
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub11]
+ParameterName=Menu 11 Posi11
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub12]
+ParameterName=Menu 11 Posi12
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub13]
+ParameterName=Menu 11 Posi13
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub14]
+ParameterName=Menu 11 Posi14
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub15]
+ParameterName=Menu 11 Posi15
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub16]
+ParameterName=Menu 11 Posi16
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub17]
+ParameterName=Menu 11 Posi17
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub18]
+ParameterName=Menu 11 Posi18
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub19]
+ParameterName=Menu 11 Posi19
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub1A]
+ParameterName=Menu 11 Posi1A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub1B]
+ParameterName=Menu 11 Posi1B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub1C]
+ParameterName=Menu 11 Posi1C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub1D]
+ParameterName=Menu 11 Posi1D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub1E]
+ParameterName=Menu 11 Posi1E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub1F]
+ParameterName=Menu 11 Posi1F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub20]
+ParameterName=#11.20 Pausenzeit SPI-BUS
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub21]
+ParameterName=#11.21 Fastmode aktiv
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub22]
+ParameterName=#11.22 Statuswort
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[2011sub23]
+ParameterName=#11.23 Drehzahlgueltigkeitsschelle
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=4000
+PDOMapping=0
+LowLimit=0
+HighLimit=8000
+
+[2011sub24]
+ParameterName=Menu 11 Posi24
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub25]
+ParameterName=Menu 11 Posi25
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub26]
+ParameterName=Menu 11 Posi26
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub27]
+ParameterName=Menu 11 Posi27
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub28]
+ParameterName=Menu 11 Posi28
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub29]
+ParameterName=Menu 11 Posi29
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub2A]
+ParameterName=Menu 11 Posi2A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub2B]
+ParameterName=Menu 11 Posi2B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub2C]
+ParameterName=Menu 11 Posi2C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub2D]
+ParameterName=Menu 11 Posi2D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub2E]
+ParameterName=Menu 11 Posi2E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub2F]
+ParameterName=Menu 11 Posi2F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub30]
+ParameterName=#11.30 Impulszahl pro Motorumdrehung
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=2048
+PDOMapping=0
+LowLimit=0
+HighLimit=8192
+
+[2011sub31]
+ParameterName=#11.31 Inwertierung nist
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2011sub32]
+ParameterName=#11.32 Filterzeitkonstante
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+LowLimit=0
+HighLimit=16
+
+[2011sub33]
+ParameterName=#11.33 ADC Toleranz
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=65
+PDOMapping=0
+LowLimit=0
+HighLimit=100
+
+[2011sub34]
+ParameterName=#11.34 IPL-Faktorcode
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=8
+PDOMapping=0
+LowLimit=0
+HighLimit=8
+
+[2011sub35]
+ParameterName=Menu 11 Posi35
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub36]
+ParameterName=Menu 11 Posi36
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub37]
+ParameterName=Menu 11 Posi37
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub38]
+ParameterName=Menu 11 Posi38
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub39]
+ParameterName=Menu 11 Posi39
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub3A]
+ParameterName=Menu 11 Posi3A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub3B]
+ParameterName=Menu 11 Posi3B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub3C]
+ParameterName=Menu 11 Posi3C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub3D]
+ParameterName=Menu 11 Posi3D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub3E]
+ParameterName=Menu 11 Posi3E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub3F]
+ParameterName=Menu 11 Posi3F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub40]
+ParameterName=#11.40 Absolutwert Geber 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[2011sub41]
+ParameterName=#11.41 Referenzwert einlesen Geber 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2011sub42]
+ParameterName=#11.42 Referenzwert Geber 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00800000
+PDOMapping=0
+LowLimit=0x00000000
+HighLimit=0x00FFFFFF
+
+[2011sub43]
+ParameterName=#11.43 Zaehlrichtungsumkehr Geber 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2011sub44]
+ParameterName=#11.44 Skalierung Geber 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=70313
+PDOMapping=0
+LowLimit=0
+HighLimit=99999999
+
+[2011sub45]
+ParameterName=#11.45 Position Geber 1
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=0
+
+[2011sub46]
+ParameterName=#11.46 SSI Fehler Geber 1
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub47]
+ParameterName=#11.47 Absolutwert Geber 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=ro
+PDOMapping=0
+
+[2011sub48]
+ParameterName=#11.48 Referenzwert einlesen Geber 2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2011sub49]
+ParameterName=#11.49 Referenzwert Geber 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=0x00800000
+PDOMapping=0
+LowLimit=0x00000000
+HighLimit=0x00FFFFFF
+
+[2011sub4A]
+ParameterName=Menu 11 Posi4A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub4B]
+ParameterName=Menu 11 Posi4B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub4C]
+ParameterName=Menu 11 Posi4C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub4D]
+ParameterName=Menu 11 Posi4D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub4E]
+ParameterName=Menu 11 Posi4E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub4F]
+ParameterName=Menu 11 Posi4F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub50]
+ParameterName=#11.50 Zaehlrichtungsumkehr Geber 2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
+
+[2011sub51]
+ParameterName=#11.51 Skalierung Geber 2
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=87890625
+PDOMapping=0
+LowLimit=0
+HighLimit=99999999
+
+[2011sub52]
+ParameterName=#11.52 Position Geber 2
+ObjectType=0x7
+DataType=0x0004
+AccessType=ro
+PDOMapping=0
+
+[2011sub53]
+ParameterName=#11.53 SSI Fehler Geber 2
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub54]
+ParameterName=#11.54 Messwert Schrank Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2011sub55]
+ParameterName=#11.55 Filterzeitkonstante T1
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=100
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2011sub56]
+ParameterName=#11.56 Offset Schrank Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-20
+HighLimit=20
+
+[2011sub57]
+ParameterName=#11.57 Skalierung Schrank Temperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2011sub58]
+ParameterName=#11.58 Schrank Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2011sub59]
+ParameterName=#11.59 Messwert Akku Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2011sub5A]
+ParameterName=Menu 11 Posi5A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub5B]
+ParameterName=Menu 11 Posi5B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub5C]
+ParameterName=Menu 11 Posi5C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub5D]
+ParameterName=Menu 11 Posi5D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub5E]
+ParameterName=Menu 11 Posi5E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub5F]
+ParameterName=Menu 11 Posi5F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub60]
+ParameterName=#11.60 Filterzeitkonstante T2
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=100
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2011sub61]
+ParameterName=#11.61 Offset Akku Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-20
+HighLimit=20
+
+[2011sub62]
+ParameterName=#11.62 Skalierung Akku Temperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2011sub63]
+ParameterName=#11.63 Akku Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2011sub64]
+ParameterName=#11.64 Messwert Reserve Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2011sub65]
+ParameterName=#11.65 Filterzeitkonstante T3
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=100
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2011sub66]
+ParameterName=#11.66 Offset Reserve Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-20
+HighLimit=20
+
+[2011sub67]
+ParameterName=#11.67 Skalierung Reserve Temperatur
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2011sub68]
+ParameterName=#11.68 Reserve Temperatur
+ObjectType=0x7
+DataType=0x0003
+AccessType=ro
+PDOMapping=0
+
+[2011sub69]
+ParameterName=#11.69 Messwert Stromeingang
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub6A]
+ParameterName=Menu 11 Posi6A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub6B]
+ParameterName=Menu 11 Posi6B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub6C]
+ParameterName=Menu 11 Posi6C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub6D]
+ParameterName=Menu 11 Posi6D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub6E]
+ParameterName=Menu 11 Posi6E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub6F]
+ParameterName=Menu 11 Posi6F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub70]
+ParameterName=#11.70 Filterzeitkonstante Strom
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+LowLimit=0
+HighLimit=1000
+
+[2011sub71]
+ParameterName=#11.71 Offset Stromeingang
+ObjectType=0x7
+DataType=0x0003
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=-700
+HighLimit=200
+
+[2011sub72]
+ParameterName=#11.72 Skalierung Stromeingang
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=1000
+PDOMapping=0
+LowLimit=0
+HighLimit=2000
+
+[2011sub73]
+ParameterName=#11.73 Stromeingang
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub74]
+ParameterName=#11.74 Eingang END90 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub75]
+ParameterName=#11.75 Eingang MAN Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub76]
+ParameterName=#11.76 Eingang RI1 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub77]
+ParameterName=#11.77 Eingang RI2 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub78]
+ParameterName=#11.78 Eingang RI3 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub79]
+ParameterName=#11.79 Eingang RI4 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub7A]
+ParameterName=Menu 11 Posi7A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub7B]
+ParameterName=Menu 11 Posi7B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub7C]
+ParameterName=Menu 11 Posi7C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub7D]
+ParameterName=Menu 11 Posi7D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub7E]
+ParameterName=Menu 11 Posi7E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub7F]
+ParameterName=Menu 11 Posi7F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub80]
+ParameterName=#11.80 Eingang RI5 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub81]
+ParameterName=#11.81 Eingang RI6 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub82]
+ParameterName=#11.82 Eingang RI7 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub83]
+ParameterName=#11.83 Eingang RI8 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub84]
+ParameterName=#11.84 Eingang RI9 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub85]
+ParameterName=#11.85 Eingang RI10 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub86]
+ParameterName=#11.86 Ausgang BR Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub87]
+ParameterName=#11.87 Ausgang LA Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub88]
+ParameterName=#11.88 Ausgang RO1 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub89]
+ParameterName=#11.89 Ausgang RO2 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub8A]
+ParameterName=Menu 11 Posi8A
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub8B]
+ParameterName=Menu 11 Posi8B
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub8C]
+ParameterName=Menu 11 Posi8C
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub8D]
+ParameterName=Menu 11 Posi8D
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub8E]
+ParameterName=Menu 11 Posi8E
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub8F]
+ParameterName=Menu 11 Posi8F
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub90]
+ParameterName=#11.90 Ausgang RO3 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub91]
+ParameterName=#11.91 Ausgang RO4 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub92]
+ParameterName=#11.92 Ausgang RO5 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub93]
+ParameterName=#11.93 Ausgang RO6 Status
+ObjectType=0x7
+DataType=0x0006
+AccessType=ro
+PDOMapping=0
+
+[2011sub94]
+ParameterName=#11.94 Geber Rohwerte
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+LowLimit=0
+HighLimit=1
