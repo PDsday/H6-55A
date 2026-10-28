@@ -1676,7 +1676,9 @@ void UserMainTask(void)
 	
 	if (((Init_flag2 == 0) && (CrcPassFlag == 0)) || (((DSP_Status >> 5) & 0x01) == 0))
 	{	
-		RPDO_Recv_link_analysis();  ///是否CANopen升级判断)					
+		#ifdef TEST_FOR_STARS = 1
+		RPDO_Recv_link_analysis();  ///是否CANopen升级判断)	
+		#endif	
 		return;
 	}
 	
@@ -1747,7 +1749,10 @@ void UserMainTask(void)
 	//MainDriveState_Control();														// 下发状态机控制命令
 	//Servo_State_Machine();														// CiA402状态机跳转
 	//DoubleRAM_ReadData();
+	
+	#ifdef TEST_FOR_STARS = 1
     if(!RPDO_Recv_link_analysis())  ///是否CANopen升级判断)
+	#endif		
     {
         DoubleRAM_WriteData();  //非CANopen升级，执行变桨逻辑
     }
