@@ -1676,7 +1676,7 @@ void UserMainTask(void)
 	
 	if (((Init_flag2 == 0) && (CrcPassFlag == 0)) || (((DSP_Status >> 5) & 0x01) == 0))
 	{	
-		#ifdef TEST_FOR_STARS = 1
+		#if TEST_FOR_STARS
 		RPDO_Recv_link_analysis();  ///是否CANopen升级判断)	
 		#endif	
 		return;
@@ -1750,7 +1750,7 @@ void UserMainTask(void)
 	//Servo_State_Machine();														// CiA402状态机跳转
 	//DoubleRAM_ReadData();
 	
-	#ifdef TEST_FOR_STARS = 1
+	#if TEST_FOR_STARS
     if(!RPDO_Recv_link_analysis())  ///是否CANopen升级判断)
 	#endif		
     {
